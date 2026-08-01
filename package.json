@@ -1,0 +1,19 @@
+{
+  "name": "evergreen-website",
+  "version": "1.0.0",
+  "description": "Website for EverGreen Home Solutions",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.6.1",
+    "express": "^4.22.2",
+    "express-validator": "^7.3.2",
+    "multer": "^1.4.5-lts.2"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs"
+}
