@@ -9,9 +9,94 @@
   --text-color: var(--dark-charcoal);
   --bg-color: var(--white);
   --font-main: "Inter", sans-serif;
-
-  /* IMAGENS */
+  /*IMAGENS*/
   --main-banner-img: url(../img/main-banner-background-dark.png);
+}
+@media (max-width: 767px) {
+  #header-button {
+    position: absolute;
+    right: 5vw;
+    background-color: transparent;
+    border: none;
+    top: 7.5vh;
+    transform: translateY(-50%);
+    outline: none;
+    color: white;
+    font-size: 1.7rem;
+    cursor: pointer;
+  }
+
+  #nav-links {
+    flex-wrap: wrap;
+    display: none;
+    padding: 10px;
+    gap: 20px;
+    width: 120px;
+    height: 200px;
+    right: 0;
+    top: 15vh;
+    border-radius: 0 0 0 5px;
+    background-color: var(--forest-green);
+  }
+
+  #main-banner {
+    height: 85vh;
+  }
+
+  #main-banner > h1 {
+    font-size: 3rem;
+    margin: 10vh 0 10vh 0;
+    margin-bottom: 5vh;
+  }
+
+  #main-banner > p {
+    font-weight: 300;
+    font-size: 1.2rem;
+    margin-bottom: 5vh;
+  }
+}
+@media (min-width: 768px) {
+  #header-button {
+    display: none;
+  }
+
+  #nav-links {
+    position: absolute;
+    right: 5vw;
+    top: 7.5vh;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 1vw;
+    transform: translateY(-50%);
+  }
+
+
+  #main-banner > p {
+    width: 60vw;
+  }
+
+  #why-choose {
+    height: 50vh;
+  }
+
+  #why-choose > h1 {
+    margin-bottom: 40vh;
+    font-size: 3.2rem;
+  }
+
+  #whychoose-list {
+    list-style: none;
+  }
+
+  .whychoose-listitem {
+    font-size: 1.2rem;
+  }
+}
+
+body.dark-mode {
+  --text-color: var(--light-gray);
+  --bg-color: var(--dark-charcoal);
+  --soft-beige: #2a2a2a;
 }
 
 * {
@@ -32,6 +117,8 @@ body {
 
 header {
   position: sticky;
+  z-index: 10;
+  top: 0;
   height: 15vh;
   background-color: var(--forest-green);
   color: var(--white);
@@ -62,32 +149,9 @@ header {
   width: 50px;
 }
 
-#header-button {
-  position: absolute;
-  right: 5vw;
-  background-color: transparent;
-  border: none;
-  top: 7.5vh;
-  transform: translateY(-50%);
-  outline: none;
-  color: white;
-  font-size: 1.7rem;
-  cursor: pointer;
-}
-
 #nav-links {
   position: absolute;
   list-style: none;
-  flex-wrap: wrap;
-  display: none;
-  padding: 10px;
-  gap: 20px;
-  width: 120px;
-  height: 150px;
-  right: 0;
-  top: 15vh;
-  border-radius: 0 0 0 5px;
-  background-color: var(--forest-green);
 }
 
 .nav-links {
@@ -107,6 +171,7 @@ header {
 }
 
 #main-banner {
+  height: 85vh;
   background-image: var(--main-banner-img);
   background-size: cover;
   padding: 2vh;
@@ -116,6 +181,8 @@ header {
 #main-banner > h1 {
   font-weight: 600;
   color: var(--white);
+  font-size: 3rem;
+  margin: 10vh 0 10vh 0;
   margin-bottom: 5vh;
 }
 
