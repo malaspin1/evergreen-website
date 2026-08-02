@@ -14,81 +14,114 @@
     />
   </head>
   <body>
-    <header>
-      <div id="logo">
-        <img src="img/white_logo.png" id="nav-logo" />
-        <span id="text-logo">EverGreen</span>
+    <header class="header">
+      <div class="header__logo">
+        <img
+          src="img/white_logo.png"
+          alt="Logo da EverGreen"
+          class="header__logo-image"
+        />
+        <span class="header__logo-text">EverGreen</span>
       </div>
-      <button id="header-button" onclick="tooglemenu()">
+
+      <button class="header__menu-button" onclick="tooglemenu()">
         <i class="fa-solid fa-bars"></i>
       </button>
-      <ul id="nav-links">
-        <li><a class="nav-links" href="#">Home</a></li>
+
+      <ul class="header__nav">
         <li>
-          <a class="nav-links" href="html/nossosservicos.html">Serviços</a>
+          <a class="header__nav-link" href="#">Home</a>
         </li>
-        <li><a class="nav-links" href="html/orcamento.html">Orçamento</a></li>
+        <li>
+          <a class="header__nav-link" href="html/nossosservicos.html">
+            Serviços
+          </a>
+        </li>
+        <li>
+          <a class="header__nav-link" href="html/orcamento.html"> Orçamento </a>
+        </li>
       </ul>
     </header>
 
     <main>
-      <section id="main-banner">
-        <h1>Cuidando do Seu Lar, Valorizando Seu Jardim</h1>
-        <p>
+      <section class="main-banner">
+        <h1 class="main-banner__title">
+          Cuidando do Seu Lar, Valorizando Seu Jardim
+        </h1>
+
+        <p class="main-banner__paragraph">
           Serviços profissionais de jardinagem, manutenção residencial e
           melhorias externas para deixar sua casa bonita, segura e bem cuidada
           durante o ano inteiro.
         </p>
-        <a href="html/nossosservicos.html" class="main-banner-button"
-          >Nossos Serviços</a
-        >
-        <a href="html/orcamento.html" class="main-banner-button"
-          >Solicite um Orçamento</a
-        >
+
+        <div class="main-banner__links">
+          <a href="html/nossosservicos.html" class="main-banner__button">
+            Nossos Serviços
+          </a>
+
+          <a href="html/orcamento.html" class="main-banner__button">
+            Solicite um Orçamento
+          </a>
+        </div>
       </section>
-      <section id="welcome">
-        <h1>Bem-vindo à EverGreen Home Solutions</h1>
-        <p>
+
+      <section class="welcome">
+        <h1 class="welcome__title">Bem-vindo à EverGreen Home Solutions</h1>
+
+        <p class="welcome__paragraph">
           Na EverGreen Home Solutions, acreditamos que um lar bem cuidado
           proporciona mais conforto, segurança e qualidade de vida. Nossa equipe
           é especializada em manutenção residencial, paisagismo e melhorias para
           áreas externas, oferecendo soluções personalizadas para cada cliente.
         </p>
-        <p>
+
+        <p class="welcome__paragraph">
           Com profissionais qualificados e atendimento de excelência,
           trabalhamos para transformar espaços externos em ambientes bonitos,
           funcionais e acolhedores.
         </p>
       </section>
-      <section id="why-choose">
-        <h1>Por que escolher a EverGreen?</h1>
-        <ul id="whychoose-list">
-          <li class="whychoose-listitem">
-            <i class="fa-solid fa-check"></i>Equipe experiente e qualificada
-          </li>
-          <li class="whychoose-listitem">
-            <i class="fa-solid fa-check"></i>Empresa licenciada e segurada
-          </li>
-          <li class="whychoose-listitem">
-            <i class="fa-solid fa-check"></i>Atendimento rápido e confiável
-          </li>
-          <li class="whychoose-listitem">
-            <i class="fa-solid fa-check"></i>Materiais e práticas sustentáveis
-          </li>
-          <li class="whychoose-listitem">
-            <i class="fa-solid fa-check"></i>Preços acessíveis
-          </li>
-          <li class="whychoose-listitem">
-            <i class="fa-solid fa-check"></i>Compromisso com a satisfação do
-            cliente
-          </li>
-        </ul>
+
+      <section class="why-choose">
+        <div class="why-choose__container">
+          <h1 class="why-choose__title">Por que escolher a EverGreen?</h1>
+          <ul class="why-choose__list">
+            <li class="why-choose__item">
+              <i class="fa-solid fa-check"></i>
+              Equipe experiente e qualificada
+            </li>
+            <li class="why-choose__item">
+              <i class="fa-solid fa-check"></i>
+              Empresa licenciada e segurada
+            </li>
+            <li class="why-choose__item">
+              <i class="fa-solid fa-check"></i>
+              Atendimento rápido e confiável
+            </li>
+            <li class="why-choose__item">
+              <i class="fa-solid fa-check"></i>
+              Materiais e práticas sustentáveis
+            </li>
+            <li class="why-choose__item">
+              <i class="fa-solid fa-check"></i>
+              Preços acessíveis
+            </li>
+            <li class="why-choose__item">
+              <i class="fa-solid fa-check"></i>
+              Compromisso com a satisfação do cliente
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
-    <footer>
-      <p>&copy; 2026 EverGreen Home Solutions.</p>
-      <p>Made by: <strong>Vitor Malaspini</strong></p>
+
+    <footer class="footer">
+      <p class="footer__text">&copy; 2026 EverGreen Home Solutions.</p>
+
+      <p class="footer__text">Made by: <strong>Vitor Malaspini</strong></p>
     </footer>
-    <script src="/js/main.js"></script>
+
+    <script src="js/main.js"></script>
   </body>
 </html>
